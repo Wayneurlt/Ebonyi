@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer footer-center bg-green-600 text-white p-4">
+  <footer class="footer footer-center bg-black text-white p-4">
     <aside>
       <p>
         Copyright © 2024 - All rights reserved by Ebonyi
@@ -9,9 +9,8 @@
   </footer>
 </template>
 <style scoped>
-/* Custom footer styles */
 .footer {
-  background-color: #008000; /* Nigerian Green */
+  background-color: #000000; 
 }
 .footer-center {
   text-align: center;
@@ -20,6 +19,6 @@
   color: white;
 }
 .bg-green-600 {
-  background-color: #008000;
+  background-color: #000000;
 }
 </style>
