@@ -1,14 +1,12 @@
 <template>
   <div class="h-full w-full">
-    <p>
-      
+    <HomeNavbar />
       <HomeHero />
       <HomeFeatures />
       <HomeNews />
       <HomeCta />
+      <HomeFaq />
       <HomeFoot />
-    
-      <NuxtLink to="/about"></NuxtLink>
-    </p>
+      <NuxtLink to="/join">woheojioi</NuxtLink>
   </div>
 </template>

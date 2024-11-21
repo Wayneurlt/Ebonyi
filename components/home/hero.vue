@@ -1,6 +1,6 @@
 <template>
-    <section class="bg-white py-16">
-        <div class="flex lg:flex-row flex-col gap-4 ">
+    <section class="h-[calc(100vh-80px)] w-full bg-white">
+        <div class="flex lg:flex-row flex-col gap-4 h-full">
 
             <!-- Hero Content -->
             <div class="flex-1 flex items-center justify-center">
@@ -48,7 +48,4 @@
 
 <style scoped>
 
-section {
-    padding: 4rem 0;
-}
 </style>

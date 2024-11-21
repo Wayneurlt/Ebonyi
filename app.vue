@@ -1,8 +1,7 @@
 <template>
   <section class="">
-    <Navbar />
-    <Foot />
-    <NuxtPage />
+    <NuxtPage /> 
+
     <Notivue v-slot="item">
       <Notification :item="item" />
     </Notivue>
