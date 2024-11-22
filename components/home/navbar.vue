@@ -23,20 +23,21 @@
 
 
 
-      <!-- Actions and Links on the Right -->
       <div class="flex items-center gap-5">
-        <NuxtLink to="/product-catalog" class="font-semibold">
-          About Us
-        </NuxtLink>
-        <div class="w-full h-full mt-2">
-          <ThemeSwitch />
-        </div>
-        <NuxtLink
-          to="/auth/login"
-          class="grid place-items-center px-4 py-2 bg-transparent border border-black dark:border-black text-black dark:text-black rounded-full focus:outline-none focus:ring-4 focus:ring-green-500 whitespace-nowrap transition-all"
-          >Join Us</NuxtLink
-        >
-      </div>
+  <NuxtLink 
+    to="/about" 
+    class="font-semibold transition-transform transform hover:scale-105"
+  >
+    About Us
+  </NuxtLink>
+  <NuxtLink
+    to="/join"
+    class="grid place-items-center px-4 py-2 bg-green-500 text-white rounded-full focus:outline-none focus:ring-4 focus:ring-green-500 whitespace-nowrap transition-all transform hover:scale-105"
+  >
+    Join Us
+  </NuxtLink>
+</div>
+
     </div>
   </nav>
 </template>

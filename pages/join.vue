@@ -1,7 +1,6 @@
-
-  <template>
-  <section class="bg-white">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+<template>
+  <section class="w-full h-screen bg-white">
+    <div class="h-full w-full grid grid-cols-1 lg:grid-cols-2">
       <!-- Left Section -->
       <div
         class="relative flex items-end px-4 pb-10 pt-60 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8"
@@ -120,64 +119,67 @@
 
       <!-- Right Section -->
       <div
-        class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24"
-      >
-        <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
-            Join Us Today
-          </h2>
-          <p class="mt-2 text-base text-gray-600">
-            Fill in your details to become part of our growing community.
-          </p>
+  class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24"
+>
+  <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
+      Join Us Today
+    </h2>
+    <p class="mt-2 text-base text-gray-600">
+      Fill in your details to become part of our growing community.
+    </p>
 
-          <form action="#" method="POST" class="mt-8">
-            <div class="space-y-5">
-              <div>
-                <label for="email" class="text-base font-medium text-gray-900">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email"
-                  class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
-                />
-              </div>
+    <form action="#" method="POST" class="mt-8">
+      <div class="space-y-5">
+        <div>
+          <label for="name" class="text-base font-medium text-gray-900">
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
+          />
+        </div>
 
-              <div>
-                <label for="name" class="text-base font-medium text-gray-900">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Enter your full name"
-                  class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
-                />
-              </div>
+        <div>
+          <label for="email" class="text-base font-medium text-gray-900">
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
+          />
+        </div>
 
-              <div>
-                <button
-                  type="submit"
-                  class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-600 rounded-md focus:outline-none hover:bg-green-700"
-                >
-                  Join the Community
-                </button>
+        <div>
+          <label for="phone" class="text-base font-medium text-gray-900">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number (e.g., +123456789)"
+            class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
+          />
+        </div>
 
-              </div>
-            </div>
-          </form>
+        <div>
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-600 rounded-md focus:outline-none hover:bg-green-700"
+          >
+            Join the Community
+          </button>
         </div>
       </div>
+    </form>
+  </div>
+</div>
+
     </div>
   </section>
 </template>
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 <template>
-    <section class="h-[calc(100vh-80px)] w-full bg-white">
+    <section class="h-[100vh] w-full bg-white">
         <div class="flex lg:flex-row flex-col gap-4 h-full">
 
             <!-- Hero Content -->
@@ -12,19 +12,20 @@
                         Connect, network, and celebrate the rich culture of Ebonyi indigenes in Kenya. Join our community to stay informed and involved.
                     </p>
                     <div class="flex items-center justify-center lg:justify-start gap-6">
-                        <button 
-                            class="px-6 py-3 bg-green-500 text-white font-bold rounded-lg shadow hover:bg-green-600 transition-all duration-300"
-                            type="button"
-                        >
-                            Join the Community
-                        </button>
-                        <button 
-                            class="px-6 py-3 bg-white text-green-500 font-bold rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
-                            type="button"
-                        >
-                            Explore Events
-                        </button>
-                    </div>
+  <a 
+    href="/join" 
+    class="px-6 py-3 bg-green-500 text-white font-bold rounded-lg shadow hover:bg-green-600 transition-all duration-300"
+  >
+    Join the Community
+  </a>
+  <a 
+    href="/events" 
+    class="px-6 py-3 bg-white text-green-500 font-bold rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
+  >
+    Explore Events
+  </a>
+</div>
+
                 </div>
             </div>
 
