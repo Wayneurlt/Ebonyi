@@ -21,22 +21,22 @@
         >
           <div class="lg:pr-4">
             <div
-              class="relative overflow-hidden bg-green-700 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10"
+              class="relative overflow-hidden px-6 pb-9 pt-64 sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10"
             >
+              <!-- Background Image -->
               <img
-                class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
-                src="/assets/images/nigeriacap.jpg"
+                class="absolute inset-0 h-full w-full object-cover"
+                src="/assets/images/map.webp"
                 alt="Ebonyi Heritage Image"
               />
-              <div
-                class="absolute inset-0 bg-green-900 mix-blend-multiply"
-              ></div>
+
+              <!-- Decorative Blur Effect -->
               <div
                 class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
                 aria-hidden="true"
               >
                 <div
-                  class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#d26c38] to-[#6a8c43] opacity-40"
+                  class="aspect-[1097/845] w-[68.5625rem]"
                   style="
                     clip-path: polygon(
                       74.1% 44.1%,
@@ -59,6 +59,8 @@
                   "
                 ></div>
               </div>
+
+              <!-- Content -->
               <figure class="relative isolate">
                 <svg
                   viewBox="0 0 162 128"
@@ -73,17 +75,17 @@
                   <use href="#0ef284b8-28c2-426e-9442-8655d393522e" x="86" />
                 </svg>
                 <blockquote
-                  class="mt-6 text-xl font-semibold leading-8 text-white"
+                  class="mt-6 text-xl font-semibold leading-8 text-black"
                 >
                   <p>
-                    “"The Ebonyi community in Kenya strives to preserve and
+                    “The Ebonyi community in Kenya strives to preserve and
                     celebrate their culture while contributing positively to the
                     society they live in. Unity, education, and heritage guide
                     us forward." - Ebonyi Diaspora Leadership
                   </p>
                 </blockquote>
-                <figcaption class="mt-6 text-sm leading-6 text-gray-300">
-                  <strong class="font-semibold text-white"
+                <figcaption class="mt-6 text-sm leading-6 text-gray-700">
+                  <strong class="font-semibold text-black"
                     >Ebonyi Community,</strong
                   >
                   Kenya

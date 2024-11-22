@@ -6,7 +6,7 @@
       <div class="relative h-[32rem]">
         <!-- Image Background -->
         <img
-          src="/assets/images/nigeriacap.jpg"
+          src="/assets/images/bg.webp"
           alt="Background Image"
           class="absolute inset-0 w-full h-full object-cover"
         />
@@ -59,7 +59,7 @@
               >
                 <img
                   class="mx-auto h-[26rem] w-full object-cover object-top transition duration-500 group-hover:scale-105"
-                  src="/assets/images/nigeriacap.jpg"
+                  src="/assets/images/vision.webp"
                   alt="Our Vision"
                   loading="lazy"
                   width="640"
