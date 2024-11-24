@@ -13,7 +13,7 @@
 
       <div class="grid gap-10 mt-10 md:grid-cols-2 lg:grid-cols-3">
         <!-- Featured Story -->
-        <div class="overflow-hidden bg-white  shadow-md">
+        <div class="overflow-hidden bg-white shadow-md transform transition-transform duration-300 hover:scale-105">
           <img
             class="object-cover w-full h-56"
             src="/assets/images/nigeriacap.jpg"
@@ -29,15 +29,29 @@
             </p>
             <a
               href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:underline"
+              class="inline-block mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
             >
-              Read more →
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </a>
           </div>
         </div>
 
         <!-- News Article -->
-        <div class="overflow-hidden bg-white  shadow-md">
+        <div class="overflow-hidden bg-white shadow-md transform transition-transform duration-300 hover:scale-105">
           <img
             class="object-cover w-full h-56"
             src="/assets/images/peace.jpg"
@@ -53,15 +67,29 @@
             </p>
             <a
               href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:underline"
+              class="inline-block mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
             >
-              Read more →
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </a>
           </div>
         </div>
 
         <!-- Announcement -->
-        <div class="overflow-hidden bg-white  shadow-md">
+        <div class="overflow-hidden bg-white shadow-md transform transition-transform duration-300 hover:scale-105">
           <img
             class="object-cover w-full h-56"
             src="/assets/images/nigeriacap.jpg"
@@ -77,36 +105,26 @@
             </p>
             <a
               href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:underline"
+              class="inline-block mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
             >
-              Read more →
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4 transform transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </a>
           </div>
         </div>
-
-        <!-- Additional Stories -->
-        <!-- <div class="overflow-hidden bg-white rounded-lg shadow-md">
-          <img
-            class="object-cover w-full h-56"
-            src="/assets/images/nigeriacap.jpg"
-            alt="News 4"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-black">
-              Volunteer Spotlight
-            </h3>
-            <p class="mt-3 text-sm text-gray-600">
-              Recognizing the efforts of our dedicated volunteers making a
-              difference.
-            </p>
-            <a
-              href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:underline"
-            >
-              Read more →
-            </a>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>

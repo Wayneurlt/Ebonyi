@@ -25,9 +25,7 @@
           >
             About Us
           </h1>
-          <p
-            class="mt-4 text-lg opacity-90 translate-y-10 animate-fade-in-up"
-          >
+          <p class="mt-4 text-lg opacity-90 translate-y-10 animate-fade-in-up">
             Celebrating the people of Ebonyi in the diaspora here in Kenya.
           </p>
           <p
@@ -116,55 +114,86 @@
       </section>
 
       <!-- Team Section -->
-      <section class="py-16 px-6 sm:px-12 lg:px-20">
-        <div class="container mx-auto text-center">
-          <h2
-            class="text-3xl font-bold opacity-0 translate-y-10 animate-fade-in-up"
-          >
-            Meet the Leaders
-          </h2>
-          <p
-            class="mt-4 text-lg text-gray-600 opacity-0 translate-y-10 animate-fade-in-up"
-          >
-            Our leadership team works tirelessly to bring the Ebonyi diaspora
-            together, ensuring that every voice is heard and every member is
-            supported.
-          </p>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10"
-          >
-            <!-- Team Member -->
-            <div class="opacity-0 translate-y-10 animate-fade-in-up">
+      <section class="bg-white text-black py-12">
+        <div class="container mx-auto px-6 sm:px-12 lg:px-20">
+          <div class="mb-8">
+            <h2 class="text-3xl font-bold text-black">
+              Leaders of the
+              <span class="italic text-gray-700"
+                >Ebonyi Diaspora Community</span
+              >
+            </h2>
+            <p class="mt-2 text-gray-600">
+              Meet the dedicated leaders working tirelessly to unite, support,
+              and empower Ebonyi indigenes in Kenya and beyond.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Leader 1 -->
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden shadow-lg p-4 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
+            >
               <img
-                src="https://via.placeholder.com/400x400"
-                alt="Leader"
-                class="w-48 mx-auto"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                src="https://via.placeholder.com/150"
+                alt="Leader 1"
               />
-              <h3 class="mt-4 text-xl font-semibold">Nkechi Okoro</h3>
-              <p class="text-gray-600">President</p>
+              <h3 class="text-xl font-bold text-gray-800">
+                Chief Nnamdi Okeke
+              </h3>
+              <p class="text-gray-600 text-sm">President</p>
             </div>
-            <!-- Repeat Team Members -->
-            <div class="opacity-0 translate-y-10 animate-fade-in-up">
+            <!-- Leader 2 -->
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden shadow-lg p-4 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
+            >
               <img
-                src="https://via.placeholder.com/400x400"
-                alt="Leader"
-                class="w-48 mx-auto"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                src="https://via.placeholder.com/150"
+                alt="Leader 2"
               />
-              <h3 class="mt-4 text-xl font-semibold">Emeka Nwankwo</h3>
-              <p class="text-gray-600">Vice President</p>
+              <h3 class="text-xl font-bold text-gray-800">
+                Mrs. Chidinma Uzor
+              </h3>
+              <p class="text-gray-600 text-sm">Vice President</p>
             </div>
-            <div class="opacity-0 translate-y-10 animate-fade-in-up">
+            <!-- Leader 3 -->
+            <div
+              class="bg-gray-100 rounded-lg overflow-hidden shadow-lg p-4 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
+            >
               <img
-                src="https://via.placeholder.com/400x400"
-                alt="Leader"
-                class="w-48 mx-auto"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+                src="https://via.placeholder.com/150"
+                alt="Leader 3"
               />
-              <h3 class="mt-4 text-xl font-semibold">Chidera Mba</h3>
-              <p class="text-gray-600">Cultural Coordinator</p>
+              <h3 class="text-xl font-bold text-gray-800">Dr. Obinna Eze</h3>
+              <p class="text-gray-600 text-sm">Secretary</p>
             </div>
           </div>
+          <div class="mt-8 text-right">
+            <a
+              href="#"
+              class="inline-flex items-center text-gray-700 hover:text-black font-medium"
+            >
+              Learn More About Our Leaders
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-4 h-4 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-      </section>
+      </section> 
 
       <section class="py-10 bg-white sm:py-16 lg:py-24">
         <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -337,5 +366,3 @@
   animation: fade-in-up 1s ease-out forwards;
 }
 </style>
-
-

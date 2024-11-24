@@ -12,15 +12,7 @@
           />
         </div>
 
-        <!-- <div class="relative">
-          <div class="h-full overflow-hidden aspect-w-3 aspect-h-4 ">
-            <img
-              class="object-cover scale-150 lg:origin-bottom-right "
-              src="/assets/images/nige.jpg"
-              alt="Nigerian Cap Close-Up"
-            />
-          </div>
-        </div> -->
+       
 
         <!-- CTA Section -->
         <div class="flex-1 flex flex-col items-start gap-4 xl:px-16">
