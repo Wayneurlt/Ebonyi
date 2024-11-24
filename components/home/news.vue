@@ -16,7 +16,7 @@
         <div class="overflow-hidden bg-white shadow-md transform transition-transform duration-300 hover:scale-105">
           <img
             class="object-cover w-full h-56"
-            src="/assets/images/nigeriacap.jpg"
+            src="/assets/images/ebony.webp"
             alt="News 1"
           />
           <div class="p-6">
@@ -29,7 +29,7 @@
             </p>
             <a
               href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
+              class=" mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
             >
               Read more
               <svg
@@ -67,7 +67,7 @@
             </p>
             <a
               href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
+              class=" mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
             >
               Read more
               <svg
@@ -92,7 +92,7 @@
         <div class="overflow-hidden bg-white shadow-md transform transition-transform duration-300 hover:scale-105">
           <img
             class="object-cover w-full h-56"
-            src="/assets/images/nigeriacap.jpg"
+            src="/assets/images/ebonya.webp"
             alt="News 3"
           />
           <div class="p-6">
@@ -105,7 +105,7 @@
             </p>
             <a
               href="#"
-              class="inline-block mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
+              class=" mt-4 text-sm font-medium text-green-600 hover:text-green-700 flex items-center gap-1 group"
             >
               Read more
               <svg

@@ -26,7 +26,7 @@
               <!-- Background Image -->
               <img
                 class="absolute inset-0 h-full w-full object-cover"
-                src="/assets/images/map.webp"
+                src="/assets/images/ebony.webp"
                 alt="Ebonyi Heritage Image"
               />
 
