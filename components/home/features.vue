@@ -1,8 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
-    <!--  -->
 
-    <div class="bg-white py-20">
+    <div class="bg-transparent py-20">
       <div>
         <h2
           class="text-3xl font-bold text-black sm:text-4xl lg:text-5xl text-center"
