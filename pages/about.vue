@@ -36,14 +36,13 @@
     </div>
 
     <!-- Mission and Vision Section -->
-    <section class="bg-transparent ">
+    <section class="bg-transparent">
       <div class="bg-white py-10">
         <div class="xl:container mx-auto px-6 md:px-12">
           <div class="mb-16 md:w-2/3 lg:w-1/2 text-center mx-auto">
             <h2 class="mb-4 text-2xl font-bold text-black md:text-4xl">
               Our Mission and Vision
             </h2>
-            <p>yeahhhhhh</p>
           </div>
 
           <div class="grid gap-6 px-4 sm:px-0 sm:grid-cols-1 md:grid-cols-2">
@@ -129,7 +128,7 @@
           >
             <img
               class="w-full h-48 object-cover rounded-lg mb-4"
-              src="https://via.placeholder.com/150"
+              src="/assets/images/vision.webp"
               alt="Leader 1"
             />
             <h3 class="text-xl font-bold text-gray-800">Chief Nnamdi Okeke</h3>
@@ -141,7 +140,7 @@
           >
             <img
               class="w-full h-48 object-cover rounded-lg mb-4"
-              src="https://via.placeholder.com/150"
+              src="/assets/images/peace.jpg"
               alt="Leader 2"
             />
             <h3 class="text-xl font-bold text-gray-800">Mrs. Chidinma Uzor</h3>
@@ -153,7 +152,7 @@
           >
             <img
               class="w-full h-48 object-cover rounded-lg mb-4"
-              src="https://via.placeholder.com/150"
+              src="/assets/images/map.webp"
               alt="Leader 3"
             />
             <h3 class="text-xl font-bold text-gray-800">Dr. Obinna Eze</h3>

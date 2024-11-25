@@ -21,7 +21,7 @@
 
         <div class="mt-4 sm:mt-8">
           <a
-            href="#"
+            href="/join"
             class="inline-block rounded-full bg-green-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-400"
           >
             Join Us Today

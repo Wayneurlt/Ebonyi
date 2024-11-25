@@ -2,7 +2,7 @@
   <nav
   class="bg-white"
   >
-    <div class="flex justify-between w-full place-items-center bg">
+    <div class="flex justify-between w-full place-items-center bg-transparent">
       <!-- Enlarged Logo on the Left -->
       <NuxtLink to="/" class="flex items-center">
         <ClientOnly>
@@ -36,7 +36,7 @@
   </nav>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 let isScrolled = ref(false);
 
 onMounted(() => {
@@ -54,8 +54,8 @@ const isDark = computed({
     colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
   },
 });
-</script>
-
+</script> -->
+<!-- 
 <style>
 .item-hover:hover .move-left {
   transform: translateX(5px);
@@ -63,4 +63,4 @@ const isDark = computed({
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
   cursor: pointer;
 }
-</style>
+</style> -->

@@ -19,7 +19,7 @@
     Join the Community
   </a>
   <a 
-    href="/events" 
+    href="/event" 
     class="px-6 py-3 bg-white text-green-500 font-bold rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
   >
     Explore Events

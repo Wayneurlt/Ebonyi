@@ -8,7 +8,7 @@
       <HomeCta />
       <HomeFaq />
       <HomeFoot />
-      
       <NuxtLink to="/join"></NuxtLink>
+      <NuxtLink to="/event">djfnini</NuxtLink>
   </div>
 </template>
