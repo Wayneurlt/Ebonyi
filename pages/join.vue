@@ -20,7 +20,7 @@
           <div
             class="w-full max-w-xl xl:w-full xl:mx-auto xl:pr-24 xl:max-w-xl"
           >
-            <h3 class="text-4xl font-bold text-white">
+            <h3 class="text-4xl font-bold text-black">
               Connect with the Ebonyi Community in Kenya
             </h3>
             <p class="mt-4 text-lg text-gray-200">
@@ -119,67 +119,103 @@
 
       <!-- Right Section -->
       <div
-  class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24"
->
-  <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
-      Join Us Today
-    </h2>
-    <p class="mt-2 text-base text-gray-600">
-      Fill in your details to become part of our growing community.
-    </p>
+        class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24"
+      >
+        <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+          <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
+            Join Us Today
+          </h2>
+          <p class="mt-2 text-base text-gray-600">
+            Fill in your details to become part of our growing community.
+          </p>
 
-    <form action="#" method="POST" class="mt-8">
-      <div class="space-y-5">
-        <div>
-          <label for="name" class="text-base font-medium text-gray-900">
-            Full Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Enter your full name"
-            class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
-          />
-        </div>
+          <form action="#" method="POST" class="mt-8">
+            <div class="space-y-5">
+              <div>
+                <label for="name" class="text-base font-medium text-gray-900">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your full name"
+                  class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
+                />
+              </div>
 
-        <div>
-          <label for="email" class="text-base font-medium text-gray-900">
-            Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
-          />
-        </div>
+              <div>
+                <label for="email" class="text-base font-medium text-gray-900">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
+                />
+              </div>
 
-        <div>
-          <label for="phone" class="text-base font-medium text-gray-900">
-            Phone Number
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            placeholder="Enter your phone number (e.g., +123456789)"
-            class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
-          />
-        </div>
+              <div>
+                <label for="phone" class="text-base font-medium text-gray-900">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone number (e.g., +123456789)"
+                  class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
+                />
+              </div>
 
-        <div>
-          <button
-            type="submit"
-            class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-green-600 rounded-md focus:outline-none hover:bg-green-700"
-          >
-            Join the Community
-          </button>
+              <div>
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold bg-white text-green-500  rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
+                >
+                  Join the Community
+                </button>
+              </div>
+              <div class="mt-4 flex space-x-2">
+                <a
+                  href="https://wa.me/your-group-link"
+                  target="_blank"
+                  class="flex-1 inline-flex items-center justify-center px-2 py-3 text-sm font-semibold text-white bg-green-500 rounded-md hover:bg-green-600 transition duration-200"
+                >
+                  <svg
+                    class="w-4 h-4 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0C5.372 0 0 5.373 0 12c0 2.118.55 4.108 1.514 5.844L0 24l6.272-1.594C8.096 23.461 10.016 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm7.306 16.69l-1.924 1.917c-.438.436-1.002.671-1.59.666-1.523-.01-4.06-1.373-6.19-3.502-2.13-2.128-3.491-4.665-3.502-6.19-.005-.587.23-1.15.666-1.588l1.923-1.926c.43-.431 1.125-.431 1.556 0l1.396 1.396c.43.43.43 1.124 0 1.554L8.98 9.696c-.014.014-.019.034-.033.048.003.014.018.025.033.038 1.18 1.366 2.562 2.748 3.929 3.931.014.014.034.03.048.033.014-.014.034-.018.048-.033l1.491-1.488c.43-.43 1.124-.43 1.554 0l1.396 1.396c.432.431.432 1.124 0 1.556z"
+                    />
+                  </svg>
+                  WhatsApp
+                </a>
+
+                <a
+                  href="https://facebook.com/your-group-link"
+                  target="_blank"
+                  class="flex-1 inline-flex items-center justify-center px-2 py-3 text-sm font-semibold text-white bg-blue-600 rounded-md hover:bg-blue-700 transition duration-200"
+                >
+                  <svg
+                    class="w-4 h-4 mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M22.676 0H1.326C.594 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.326 24h11.497v-9.294H9.847v-3.622h2.976v-2.687c0-2.938 1.797-4.548 4.42-4.548 1.256 0 2.339.093 2.654.135v3.074h-1.821c-1.43 0-1.706.678-1.706 1.673v2.354h3.413l-.445 3.622h-2.968V24h5.811c.733 0 1.326-.593 1.326-1.326V1.326C24 .594 23.407 0 22.676 0z"
+                    />
+                  </svg>
+                  Facebook
+                </a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
-  </div>
-</div>
-
     </div>
   </section>
 </template>

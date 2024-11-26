@@ -4,7 +4,7 @@
     <div class="relative h-[32rem]">
       <!-- Image Background -->
       <img
-        src="/assets/images/bg.webp"
+        src="/assets/images/abbt.webp"
         alt="Background Image"
         class="absolute inset-0 w-full h-full object-cover"
       />
@@ -112,11 +112,11 @@
     <section class="bg-white text-black py-12">
       <div class="container mx-auto px-6 sm:px-12 lg:px-20">
         <div class="mb-8">
-          <h2 class="text-3xl font-bold text-black">
+          <h2 class="text-3xl font-bold text-black text-center">
             Leaders of the
             <span class="italic text-gray-700">Ebonyi Diaspora Community</span>
           </h2>
-          <p class="mt-2 text-gray-600">
+          <p class="mt-2 text-gray-600 text-center">
             Meet the dedicated leaders working tirelessly to unite, support, and
             empower Ebonyi indigenes in Kenya and beyond.
           </p>
@@ -193,12 +193,12 @@
           <div class="flex flex-col justify-between lg:py-5">
             <div>
               <h2
-                class="text-3xl font-bold leading-tight text-green-600 sm:text-4xl lg:leading-tight lg:text-5xl"
+                class="text-3xl font-bold leading-tight text-green-600 sm:text-4xl lg:leading-tight lg:text-5xl text-center"
               >
                 Stay Connected with Us
               </h2>
               <p
-                class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-700"
+                class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-700 text-center"
               >
                 Have questions or want to get involved? We're here to help.
                 Reach out to us, and let's celebrate the Ebonyi spirit together.
@@ -234,7 +234,7 @@
           <div class="lg:pl-12">
             <div class="overflow-hidden bg-gray-50 rounded-md shadow-md">
               <div class="p-6 sm:p-10">
-                <h3 class="text-3xl font-semibold text-green-600">
+                <h3 class="text-3xl font-semibold text-grey-900">
                   Contact Us
                 </h3>
                 <p class="mt-4 text-base text-gray-600">

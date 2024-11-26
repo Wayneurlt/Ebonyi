@@ -1,4 +1,5 @@
 <template>
+    
     <div
       ref="canvasContainerRef"
       class="fixed inset-0 w-full h-full overflow-hidden"
@@ -6,12 +7,13 @@
     >
       <canvas ref="canvasRef" class="w-full h-full"></canvas>
     </div>
-    
+
   </template>
   
   
   <script setup lang="ts">
-  import { useMouse, useDevicePixelRatio } from "@vueuse/core";
+  import { HomeNavbar } from "#build/components";
+import { useMouse, useDevicePixelRatio } from "@vueuse/core";
   
   type Circle = {
     x: number;
@@ -132,8 +134,8 @@
     const size = Math.floor(Math.random() * 2) + 1;
     const alpha = 0;
     const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
-    const dx = (Math.random() - 0.5) * 1;
-    const dy = (Math.random() - 0.5) * 1;
+    const dx = (Math.random() - 0.5) * 10;
+    const dy = (Math.random() - 0.5) * 10;
     const magnetism = 0.1 + Math.random() * 4;
     return {
       x,

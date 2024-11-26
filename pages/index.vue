@@ -9,6 +9,6 @@
       <HomeFaq />
       <HomeFoot />
       <NuxtLink to="/join"></NuxtLink>
-      <NuxtLink to="/event">djfnini</NuxtLink>
+      <NuxtLink to="/event"></NuxtLink>
   </div>
 </template>
