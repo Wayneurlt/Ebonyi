@@ -10,7 +10,7 @@
             Celebrating Ebonyi Heritage in
             <span class="text-green-500 dark:text-green-400"
               >Kenya's Diaspora</span
-            >
+            > WAYNEE
           </h1>
           <p
             class="text-surface-700 dark:text-surface-200 leading-normal mb-8 text-center lg:text-left"

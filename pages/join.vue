@@ -129,7 +129,7 @@
             Fill in your details to become part of our growing community.
           </p>
 
-          <form action="#" method="POST" class="mt-8">
+          <form @submit.prevent="handleSubmit ">
             <div class="space-y-5">
               <div>
                 <label for="name" class="text-base font-medium text-gray-900">
@@ -138,6 +138,8 @@
                 <input
                   type="text"
                   id="name"
+                  v-model="form.name"
+                  required
                   placeholder="Enter your full name"
                   class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
                 />
@@ -150,6 +152,8 @@
                 <input
                   type="email"
                   id="email"
+                  v-model="form.email"
+                  required
                   placeholder="Enter your email"
                   class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
                 />
@@ -162,6 +166,8 @@
                 <input
                   type="tel"
                   id="phone"
+                  v-model="form.phone"
+                  required
                   placeholder="Enter your phone number (e.g., +123456789)"
                   class="block w-full mt-2.5 py-4 px-4 text-black placeholder-gray-500 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:border-green-600 focus:bg-white caret-green-600"
                 />
@@ -170,9 +176,13 @@
               <div>
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold bg-white text-green-500  rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
+                  :disabled="loading"
+                  class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold bg-white text-green-500 rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
                 >
                   Join the Community
+
+                  <span v-if="loading">Submitting...</span>
+                  <span v-else>Submit</span>
                 </button>
               </div>
               <div class="mt-4 flex space-x-2">
@@ -219,3 +229,62 @@
     </div>
   </section>
 </template>
+
+<script>
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([data.name, data.email, data.phone, new Date()]);
+  return ContentService.createTextOutput(JSON.stringify({ success: true }))
+    .setMimeType(ContentService.MimeType.JSON)
+    .setHeader("Access-Control-Allow-Origin", "https://www.ebonyidiaspora.com/")
+    .setHeader("Access-Control-Allow-Methods", "POST");
+}
+
+export default {
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        phone: "",
+      },
+      loading: false,
+    };
+  },
+  methods: {
+    async handleSubmit() {
+  this.loading = true;
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbzi5jzsWc81vPt8ix6IlDkv6BqiUikJ_JhiAejMSpqgT5rSRQpy1z1t4Jm3NGZCops/exec', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: this.form.name,
+        email: this.form.email,
+        phone: this.form.phone,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP Error: ${response.status}`);
+    }
+
+    const result = await response.json();
+    if (result.success) {
+      alert('Form submitted successfully!');
+    } else {
+      alert('Submission failed: ' + result.error);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Error: ' + error.message);
+  } finally {
+    this.loading = false;
+  }
+
+
+    },
+  },
+};
+</script>
