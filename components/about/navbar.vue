@@ -13,12 +13,7 @@
   </NuxtLink>
 
   <div class="flex items-center gap-5">
-    <NuxtLink
-      to="/"
-      class="font-semibold transition-transform transform hover:scale-105"
-    >
-      Home
-    </NuxtLink>
+   
 
     <NuxtLink
       to="/about"

@@ -21,6 +21,10 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@prisma/nuxt": "^0.0.35",
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "googleapis": "^144.0.0",
     "notivue": "^2.4.5",
     "nuxt": "^3.13.0",
     "nuxt-auth-utils": "^0.3.9",
@@ -32,5 +36,11 @@
     "@iconify-json/iconamoon": "^1.2.0",
     "@prisma/client": "^5.20.0",
     "@types/bcrypt": "^5.0.2"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
