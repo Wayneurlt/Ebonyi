@@ -129,7 +129,7 @@
             Fill in your details to become part of our growing community.
           </p>
 
-          <form @submit.prevent="handleSubmit ">
+          <form @submit.prevent="handleSubmit">
             <div class="space-y-5">
               <div>
                 <label for="name" class="text-base font-medium text-gray-900">
@@ -179,10 +179,8 @@
                   :disabled="loading"
                   class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold bg-white text-green-500 rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
                 >
-                  Join the Community
-
                   <span v-if="loading">Submitting...</span>
-                  <span v-else>Submit</span>
+                  <span v-else>Join the Community</span>
                 </button>
               </div>
               <div class="mt-4 flex space-x-2">
@@ -232,14 +230,53 @@
 
 <script>
 function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var data = JSON.parse(e.postData.contents);
-  sheet.appendRow([data.name, data.email, data.phone, new Date()]);
-  return ContentService.createTextOutput(JSON.stringify({ success: true }))
-    .setMimeType(ContentService.MimeType.JSON)
-    .setHeader("Access-Control-Allow-Origin", "https://www.ebonyidiaspora.com/")
-    .setHeader("Access-Control-Allow-Methods", "POST");
+  try {
+    // Log incoming POST data for debugging
+    Logger.log('Raw POST Data: ' + JSON.stringify(e));
+
+    if (!e.postData) {
+      throw new Error('No POST data received');
+    }
+
+    var data = JSON.parse(e.postData.contents);
+    Logger.log('Parsed Data: ' + JSON.stringify(data));
+
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    sheet.appendRow([data.name, data.email, data.phone, new Date()]);
+
+    // Return success response with proper CORS handling
+    return ContentService.createTextOutput(JSON.stringify({ success: true }))
+      .setMimeType(ContentService.MimeType.JSON)
+    .setHeader("Access-Control-Allow-Origin", "https://www.ebonyidiaspora.com/");
+  } catch (error) {
+    Logger.log('Error: ' + error.message);
+
+    return ContentService.createTextOutput(JSON.stringify({ success: false, error: error.message }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 }
+
+
+
+function doGet(e) {
+  return handleCORS();
+}
+
+
+
+
+function handleCORS() {
+  const response = ContentService.createTextOutput();
+  response.setMimeType(ContentService.MimeType.JSON);
+  response.setContent('{"message":"CORS enabled"}');
+  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  return response;
+}
+
+
+
 
 export default {
   data() {
@@ -254,36 +291,37 @@ export default {
   },
   methods: {
     async handleSubmit() {
-  this.loading = true;
-  try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzi5jzsWc81vPt8ix6IlDkv6BqiUikJ_JhiAejMSpqgT5rSRQpy1z1t4Jm3NGZCops/exec', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: this.form.name,
-        email: this.form.email,
-        phone: this.form.phone,
-      }),
-    });
+      this.loading = true;
+      try {
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbzi5jzsWc81vPt8ix6IlDkv6BqiUikJ_JhiAejMSpqgT5rSRQpy1z1t4Jm3NGZCops/exec",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: this.form.name,
+              email: this.form.email,
+              phone: this.form.phone,
+            }),
+          }
+        );
 
-    if (!response.ok) {
-      throw new Error(`HTTP Error: ${response.status}`);
-    }
+        if (!response.ok) {
+          throw new Error(`HTTP Error: ${response.status}`);
+        }
 
-    const result = await response.json();
-    if (result.success) {
-      alert('Form submitted successfully!');
-    } else {
-      alert('Submission failed: ' + result.error);
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    alert('Error: ' + error.message);
-  } finally {
-    this.loading = false;
-  }
-
-
+        const result = await response.json();
+        if (result.success) {
+          alert("Form submitted successfully!");
+        } else {
+          alert("Submission failed: " + result.error);
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Error: " + error.message);
+      } finally {
+        this.loading = false;
+      }
     },
   },
 };
