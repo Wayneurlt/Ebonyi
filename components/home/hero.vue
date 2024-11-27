@@ -1,5 +1,5 @@
 <template>
-  <section class="h-[100vh] w-full bg-white">
+  <section class="h-[100vh] w-full bg-white md:pt-0 pt-12">
     <div class="flex lg:flex-row flex-col gap-4 h-full">
       <!-- Hero Content -->
       <div class="flex-1 flex items-center justify-center">
