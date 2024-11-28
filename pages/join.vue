@@ -259,7 +259,7 @@ export default {
         );
 
         if(response.status == 200){
-          push.success("You")
+          push.success("Information Submitted")
         }
       } catch (error) {
         console.error("Error:", error);
