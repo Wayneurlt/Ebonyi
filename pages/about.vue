@@ -114,52 +114,68 @@
         <div class="mb-8">
           <h2 class="text-3xl font-bold text-black text-center">
             Leaders of the
-            <span class="italic text-gray-700">Ebonyi Diaspora Community</span>
+            <span class="italic text-green-500">Ebonyi Diaspora Community</span>
           </h2>
           <p class="mt-2 text-gray-600 text-center">
             Meet the dedicated leaders working tirelessly to unite, support, and
             empower Ebonyi indigenes in Kenya and beyond.
           </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Leader 1 -->
+
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div
-            class="bg-gray-100 rounded-lg overflow-hidden shadow-lg p-4 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
+            class="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12"
           >
-            <img
-              class="w-full h-48 object-cover rounded-lg mb-4"
-              src="/assets/images/blank.png"
-              alt="Leader 1"
-            />
-            <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
-            <p class="text-gray-600 text-sm">President</p>
-          </div>
-          <!-- Leader 2 -->
-          <div
-            class="bg-gray-100 rounded-lg overflow-hidden shadow-lg p-4 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
-          >
-            <img
-              class="w-full h-48 object-cover rounded-lg mb-4"
-              src="/assets/images/blank.png"
-              alt="Leader 2"
-            />
-            <h3 class="text-xl font-bold text-gray-800">Jane Doe</h3>
-            <p class="text-gray-600 text-sm">Vice President</p>
-          </div>
-          <!-- Leader 3 -->
-          <div
-            class="bg-gray-100 rounded-lg overflow-hidden shadow-lg p-4 hover:shadow-xl hover:scale-105 transform transition-all duration-300"
-          >
-            <img
-              class="w-full h-48 object-cover rounded-lg mb-4"
-              src="/assets/images/blan.png"
-              alt="Leader 3"
-            />
-            <h3 class="text-xl font-bold text-gray-800">Jane Doe</h3>
-            <p class="text-gray-600 text-sm">Secretary</p>
+            <!-- Card 1 -->
+            <div
+              class="group overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105"
+            >
+              <img
+                class="w-full"
+                src="/assets/images/blank.png"
+                alt="Team Member 1"
+              />
+              <div class="p-4 bg-white text-center">
+                <h3 class="text-lg font-semibold text-gray-900">John Doe</h3>
+                <p class="text-gray-600">President</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="group overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105"
+            >
+              <img
+                class="w-full"
+                src="/assets/images/blank.png"
+                alt="Team Member 2"
+              />
+              <div class="p-4 bg-white text-center">
+                <h3 class="text-lg font-semibold text-gray-900">Jane Smith</h3>
+                <p class="text-gray-600">Vice President</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="group overflow-hidden rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105"
+            >
+              <img
+                class="w-full"
+                src="/assets/images/blank.png"
+                alt="Team Member 3"
+              />
+              <div class="p-4 bg-white text-center">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Mark Johnson
+                </h3>
+                <p class="text-gray-600">Secretary</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="mt-8 text-right">
+
+        <!-- <div class="mt-8 text-right">
           <a
             href="#"
             class="inline-flex items-center text-gray-700 hover:text-black font-medium"
@@ -180,11 +196,11 @@
               />
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section class="py-10 bg-white sm:py-16 lg:py-24">
+    <section class="py-10 bg-transparent sm:py-16 lg:py-24">
       <div class="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
         <div
           class="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10"
@@ -215,12 +231,12 @@
               <div class="flex items-center mt-8">
                 <img
                   class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
-                  src="https://via.placeholder.com/150"
+                  src="/assets/images/blan.png"
                   alt="Testimonial"
                 />
                 <div class="ml-4">
                   <p class="text-base font-semibold text-green-600">
-                    Chidera Okonkwo
+                    John Doe
                   </p>
                   <p class="mt-px text-sm text-gray-500">
                     Member, Ebonyi Diaspora
@@ -234,9 +250,7 @@
           <div class="lg:pl-12">
             <div class="overflow-hidden bg-gray-50 rounded-md shadow-md">
               <div class="p-6 sm:p-10">
-                <h3 class="text-3xl font-semibold text-grey-900">
-                  Contact Us
-                </h3>
+                <h3 class="text-3xl font-semibold text-grey-900">Contact Us</h3>
                 <p class="mt-4 text-base text-gray-600">
                   Fill out the form below, and we’ll get back to you shortly.
                 </p>
