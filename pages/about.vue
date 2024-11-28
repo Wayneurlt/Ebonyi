@@ -128,10 +128,10 @@
           >
             <img
               class="w-full h-48 object-cover rounded-lg mb-4"
-              src="/assets/images/vision.webp"
+              src="/assets/images/blank.png"
               alt="Leader 1"
             />
-            <h3 class="text-xl font-bold text-gray-800">Chief Nnamdi Okeke</h3>
+            <h3 class="text-xl font-bold text-gray-800">John Doe</h3>
             <p class="text-gray-600 text-sm">President</p>
           </div>
           <!-- Leader 2 -->
@@ -140,10 +140,10 @@
           >
             <img
               class="w-full h-48 object-cover rounded-lg mb-4"
-              src="/assets/images/peace.jpg"
+              src="/assets/images/blank.png"
               alt="Leader 2"
             />
-            <h3 class="text-xl font-bold text-gray-800">Mrs. Chidinma Uzor</h3>
+            <h3 class="text-xl font-bold text-gray-800">Jane Doe</h3>
             <p class="text-gray-600 text-sm">Vice President</p>
           </div>
           <!-- Leader 3 -->
@@ -152,10 +152,10 @@
           >
             <img
               class="w-full h-48 object-cover rounded-lg mb-4"
-              src="/assets/images/map.webp"
+              src="/assets/images/blan.png"
               alt="Leader 3"
             />
-            <h3 class="text-xl font-bold text-gray-800">Dr. Obinna Eze</h3>
+            <h3 class="text-xl font-bold text-gray-800">Jane Doe</h3>
             <p class="text-gray-600 text-sm">Secretary</p>
           </div>
         </div>
