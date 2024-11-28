@@ -229,54 +229,6 @@
 </template>
 
 <script>
-function doPost(e) {
-  try {
-    // Log incoming POST data for debugging
-    Logger.log('Raw POST Data: ' + JSON.stringify(e));
-
-    if (!e.postData) {
-      throw new Error('No POST data received');
-    }
-
-    var data = JSON.parse(e.postData.contents);
-    Logger.log('Parsed Data: ' + JSON.stringify(data));
-
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    sheet.appendRow([data.name, data.email, data.phone, new Date()]);
-
-    // Return success response with proper CORS handling
-    return ContentService.createTextOutput(JSON.stringify({ success: true }))
-      .setMimeType(ContentService.MimeType.JSON)
-    .setHeader("Access-Control-Allow-Origin", "https://www.ebonyidiaspora.com/");
-  } catch (error) {
-    Logger.log('Error: ' + error.message);
-
-    return ContentService.createTextOutput(JSON.stringify({ success: false, error: error.message }))
-      .setMimeType(ContentService.MimeType.JSON);
-  }
-}
-
-
-
-function doGet(e) {
-  return handleCORS();
-}
-
-
-
-
-function handleCORS() {
-  const response = ContentService.createTextOutput();
-  response.setMimeType(ContentService.MimeType.JSON);
-  response.setContent('{"message":"CORS enabled"}');
-  response.setHeader("Access-Control-Allow-Origin", "*");
-  response.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  return response;
-}
-
-
-
 
 export default {
   data() {
@@ -294,7 +246,7 @@ export default {
       this.loading = true;
       try {
         const response = await fetch(
-          "https://script.google.com/macros/s/AKfycbzi5jzsWc81vPt8ix6IlDkv6BqiUikJ_JhiAejMSpqgT5rSRQpy1z1t4Jm3NGZCops/exec",
+          "https://byzara.life/api/ebonyi/add",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -306,19 +258,12 @@ export default {
           }
         );
 
-        if (!response.ok) {
-          throw new Error(`HTTP Error: ${response.status}`);
-        }
-
-        const result = await response.json();
-        if (result.success) {
-          alert("Form submitted successfully!");
-        } else {
-          alert("Submission failed: " + result.error);
+        if(response.status == 200){
+          push.success("You")
         }
       } catch (error) {
         console.error("Error:", error);
-        alert("Error: " + error.message);
+        push.error("Error: " + error.message);
       } finally {
         this.loading = false;
       }
