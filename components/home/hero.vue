@@ -29,7 +29,7 @@
               href="/event"
               class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold bg-white text-green-500  rounded-lg shadow border-2 border-green-500 hover:bg-green-500 hover:text-white transition-all duration-300"
             >
-              Explore Events
+            Events
             </a>
           </div>
         </div>
